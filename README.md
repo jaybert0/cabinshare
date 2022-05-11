@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Initial Whiteboard
+<img width="731" alt="image" src="https://user-images.githubusercontent.com/93459557/167949522-5ac09262-1a55-4ce3-8943-4b682b196489.png">
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Backend Model
+<img width="1097" alt="image" src="https://user-images.githubusercontent.com/93459557/167949713-8209d522-936f-40cb-9315-b1a9e5bbf5ee.png">
