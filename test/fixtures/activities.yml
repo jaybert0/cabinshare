@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  trip: one
+  schedule: MyString
+  likes: 1
+  link: MyString
+
+two:
+  name: MyString
+  description: MyString
+  trip: two
+  schedule: MyString
+  likes: 1
+  link: MyString
