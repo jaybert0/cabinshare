@@ -14,13 +14,14 @@ import {
   Button,
 } from "@chakra-ui/react";
 import UIDrawer from "./Components/UI/Drawer";
+import Footer from "./Components/UI/Footer";
 
 function App() {
   return (
     <div>
-      <UIDrawer></UIDrawer>
       <Box>
-        <Circle bg="tomato" color="white">
+      <UIDrawer></UIDrawer>
+        <Circle bg="orange" color="white">
           {/* <Flex> */}
           <Text fontSize="4xl">Welcome to CabinShare</Text>
           {/* </Flex> */}
@@ -28,7 +29,7 @@ function App() {
       </Box>
       <Spacer />
       <Box>
-        <Square bg="blue" color="white">
+        <Square bg="white" color="orange">
           {/* <Flex> */}
           <Text fontSize="2xl">
             Your one-stop application for planning your next shared cabin
@@ -41,21 +42,22 @@ function App() {
         </Center>
         <Center>
         <Stack spacing={4} direction="row" align="center">
-          <Button colorScheme="teal" size="md">
+          <Button colorScheme="orange" size="md">
             Trips
           </Button>
-          <Button colorScheme="teal" size="md">
+          <Button colorScheme="orange" size="md">
             Activities
           </Button>
-          <Button colorScheme="teal" size="md">
+          <Button colorScheme="orange" size="md">
             Meals
           </Button>
-          <Button colorScheme="teal" size="md">
+          <Button colorScheme="orange" size="md">
             Inventories
           </Button>
         </Stack>
         </Center>
       </Box>
+    <Footer></Footer>
     </div>
   );
 }
