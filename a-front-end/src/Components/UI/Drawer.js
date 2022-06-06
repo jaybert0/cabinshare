@@ -20,7 +20,7 @@ function UIDrawer() {
     return (
       <>
         <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Open
+        ≡
         </Button>
         <Drawer
           isOpen={isOpen}
