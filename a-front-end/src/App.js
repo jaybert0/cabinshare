@@ -10,6 +10,7 @@ function App() {
   return (
         
     <div>
+      <UIDrawer></UIDrawer>
       <Box>
       <Circle bg='tomato' color='white'>
         {/* <Flex> */}
