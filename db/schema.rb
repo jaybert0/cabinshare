@@ -34,10 +34,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_12_185018) do
   end
 
   create_table "inventories", force: :cascade do |t|
-    t.string "items"
-    t.string "snacks"
-    t.string "booze"
-    t.string "wishlist_items"
+    t.string "type"
+    t.string "item"
+    t.string "wishlist_item"
     t.boolean "can_bring"
     t.integer "trip_id", null: false
     t.datetime "created_at", null: false
