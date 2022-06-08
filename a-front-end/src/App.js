@@ -15,10 +15,12 @@ import {
 } from "@chakra-ui/react";
 import UIDrawer from "./Components/UI/Drawer";
 import Footer from "./Components/UI/Footer";
+import Header from "./Components/UI/Header"
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <Box>
       <UIDrawer></UIDrawer>
         <Circle bg="orange" color="white">
