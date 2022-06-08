@@ -19,12 +19,12 @@ function UIDrawer() {
   
     return (
       <>
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
+        <Button ref={btnRef} colorScheme='orange' onClick={onOpen}>
         ≡
         </Button>
         <Drawer
           isOpen={isOpen}
-          placement='left'
+          placement='right'
           onClose={onClose}
           finalFocusRef={btnRef}
         >
