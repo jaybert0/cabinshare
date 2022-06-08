@@ -13,7 +13,7 @@ import {
   Stack,
   Button,
 } from "@chakra-ui/react";
-import UIDrawer from "./Components/UI/Drawer";
+// import UIDrawer from "./Components/UI/Drawer";
 import Footer from "./Components/UI/Footer";
 import Header from "./Components/UI/Header"
 
@@ -22,7 +22,7 @@ function App() {
     <div>
       <Header></Header>
       <Box>
-      <UIDrawer></UIDrawer>
+      {/* <UIDrawer></UIDrawer> */}
         <Circle bg="orange" color="white">
           {/* <Flex> */}
           <Text fontSize="4xl">Welcome to CabinShare</Text>
