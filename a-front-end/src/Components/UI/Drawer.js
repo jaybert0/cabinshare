@@ -8,7 +8,8 @@ import {
     DrawerContent,
     DrawerCloseButton,
     Input,
-    useDisclosure
+    useDisclosure,
+    Stack
   } from '@chakra-ui/react'
   import React, { useEffect, useState } from "react";
 
@@ -34,7 +35,20 @@ function UIDrawer() {
             <DrawerHeader>CabinShare</DrawerHeader>
   
             <DrawerBody>
-              <Input placeholder='Type here...' />
+            <Stack spacing={4} direction="row" align="center">
+          <Button colorScheme="orange" size="md">
+            Trips
+          </Button>
+          <Button colorScheme="orange" size="md">
+            Activities
+          </Button>
+          <Button colorScheme="orange" size="md">
+            Meals
+          </Button>
+          <Button colorScheme="orange" size="md">
+            Inventories
+          </Button>
+        </Stack>
             </DrawerBody>
   
             <DrawerFooter>
