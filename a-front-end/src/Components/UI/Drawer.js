@@ -35,7 +35,9 @@ function UIDrawer() {
             <DrawerHeader>CabinShare</DrawerHeader>
   
             <DrawerBody>
-            <Stack spacing={4} direction="row" align="center">
+            <Stack spacing={4} direction="column" 
+            // align="center"
+            >
           <Button colorScheme="orange" size="md">
             Trips
           </Button>
@@ -55,7 +57,7 @@ function UIDrawer() {
               <Button variant='outline' mr={3} onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme='blue'>Save</Button>
+              <Button colorScheme='orange'>Save</Button>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
