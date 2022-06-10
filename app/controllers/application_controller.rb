@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
     include ActionController::Cookies
+    include ::ActionController::Serialization
 
   rescue_from ActiveRecord::RecordInvalid, with: :render_invalid_response
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
