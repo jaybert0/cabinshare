@@ -5,6 +5,18 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'date'
 
-Activity.create(name: 'Hiking', description: 'Lots of trails around', trip_id: 1, schedule: 'Friday or Saturday', likes: 0 )
-Inventory.create(items: 'Cornhole boards, Smash-up (Boardgame), Switch', snacks: 'Chips, pretzels, dried mango', booze: '2 4-packs of IPA and 1 4-pack of sours', wishlist_items: 'Oculus')
+puts "seeding..."
+
+user1 = User.create(email: "h@gmail.com", password: "123456789", name: "Hain", diet_restriction: "none")
+
+trip1 = Trip.create(name: "beach", start_date: Date.parse("16/06/2022"), end_date: Date.parse("18/06/2022"))
+
+UserTrip.create( trip_id: trip1.id, user_id: user1.id)
+
+activity1 = Activity.create(name: "golf", description: "play golf", trip_id: trip1.id, schedule: "test", likes: 0, link: "test_link")
+
+meal1 = Meal.create(dish: "fish", cook: "Jay")
+
+puts "done"
