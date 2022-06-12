@@ -12,7 +12,7 @@ import {
   Stack,
   Button,
 } from "@chakra-ui/react";
-// import UIDrawer from "./Components/UI/Drawer";
+
 import Footer from "./Components/UI/Footer";
 import Header from "./Components/UI/Header";
 import logo from "./Components/UI/cabin.png";
