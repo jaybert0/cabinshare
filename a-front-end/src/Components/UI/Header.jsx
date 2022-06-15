@@ -14,8 +14,13 @@ import {
 } from "@chakra-ui/react";
 import logo from "./cabin.png";
 import UIDrawer from "./Drawer";
+import { useNavigate } from "react-router-dom";
+
+
 
 function Header() {
+  const navigate = useNavigate()
+
   return (
     <header>
       <Box w="100%" bg="white">
