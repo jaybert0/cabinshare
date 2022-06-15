@@ -28,7 +28,7 @@ function App() {
     // Navigate to home page after logout and clear history
     navigate("/login");
 }
-
+// NICE!!! Thanks for setting this up 
   return (
     <div>
       <Routes>
