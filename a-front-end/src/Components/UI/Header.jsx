@@ -24,6 +24,7 @@ function Header() {
             <Image height="50px" objectFit="contain" src={logo} />
           </Box>
           <Spacer />
+          <Circle color="orange" cursor="pointer"> Login </Circle>
           <Box p="5">
             <UIDrawer />
           </Box>

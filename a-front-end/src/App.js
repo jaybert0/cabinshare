@@ -12,14 +12,26 @@ import {
   Stack,
   Button,
 } from "@chakra-ui/react";
-
+import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
 import Footer from "./Components/UI/Footer";
 import Header from "./Components/UI/Header";
 import logo from "./Components/UI/cabin.png";
 
 function App() {
+  const [user, setUser] = useState([])
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
   return (
     <div>
+      
       <Header></Header>
       <Center>
         <Box width="50%">
@@ -61,6 +73,10 @@ function App() {
         </Center>
       </Box>
       <Footer></Footer>
+     
+      <Routes>
+        <Route path="/login"/>
+      </Routes>
     </div>
   );
 }
