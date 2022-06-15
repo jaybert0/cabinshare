@@ -12,11 +12,18 @@ import {
     Stack
   } from '@chakra-ui/react'
   import React, { useEffect, useState } from "react";
+  import { Link } from "react-router-dom";
 
 
-function UIDrawer() {
+function UIDrawer({handleLogOutClick, user}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
+
+    function showLogout (){
+      if (user !== null){
+        return <Button onClick={handleLogOutClick}>Logout</Button>
+      }
+    }
   
     return (
       <>
@@ -50,9 +57,10 @@ function UIDrawer() {
           <Button colorScheme="orange" size="md">
             Inventories
           </Button>
+          {showLogout()}
         </Stack>
             </DrawerBody>
-  
+
             <DrawerFooter>
               <Button variant='outline' mr={3} onClick={onClose}>
                 Cancel
