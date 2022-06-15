@@ -16,10 +16,10 @@ import {
   import Header from "./Header";
   import logo from "./cabin.png";
 
-function Home (){
+function Home ({handleLogOutClick, user}){
     return (
         <div>
-            <Header></Header>
+            <Header handleLogOutClick={handleLogOutClick} user={user}></Header>
       <Center>
         <Box width="50%">
           <Circle bg="orange" color="white">
