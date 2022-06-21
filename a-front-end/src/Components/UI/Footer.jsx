@@ -23,7 +23,7 @@ import {
         >
           <Container maxWidth="lg">
             <Box textAlign="center" pt={{ xs: 2, sm: 3 }} pb={{ xs: 2, sm: 3 }}>
-              CABINSHARE© 2022
+              CABINSHARE© 2022 | No affilitaion with Airbnb, Inc.
             </Box>
           </Container>
         </Box>
